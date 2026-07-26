@@ -51,10 +51,24 @@ button:focus-visible {
 /* ---------- Hero ---------- */
 
 .hero {
-  background: var(--bg-panel);
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(8,10,18,0.74), rgba(8,10,18,0.58)),
+    url("ns-merger.gif") center / cover no-repeat;
   padding-top: 72px;
   padding-bottom: 0;
 }
+
+.hero .eyebrow { color: #D7D9E8; }
+.hero h1 { color: #FFFFFF; }
+.hero .role { color: #A9B7FF; }
+.hero .thesis { color: #E9EAF2; }
+.hero .links a { color: #FFFFFF; }
+.hero .links a:hover { color: #A9B7FF; }
 
 .eyebrow {
   font-family: var(--mono);
@@ -105,8 +119,8 @@ h1 {
   height: 44px;
 }
 .ringdown polyline {
-  stroke: var(--accent);
-  opacity: 0.55;
+  stroke: #FFFFFF;
+  opacity: 0.8;
 }
 
 /* ---------- Sections ---------- */
